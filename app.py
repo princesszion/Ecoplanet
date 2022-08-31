@@ -14,7 +14,7 @@ def get_data_from_excel():
     df = pd.read_excel(
         io="Data.xlsx",
         engine="openpyxl",
-        sheet_name="Philipines",
+        sheet_name="Ghana",
         usecols="B:J",
         nrows=1000,
     )
@@ -42,7 +42,7 @@ df_selection = df.query(
 )
 
 # ---- MAINPAGE ----
-st.title(":bar_chart: Sales Dashboard")
+st.title(":bar_chart: Ghana Dashboard")
 st.markdown("##")
 
 # TOP KPI's
@@ -110,7 +110,7 @@ def get_data_from_excel():
     df = pd.read_excel(
         io="Data.xlsx",
         engine="openpyxl",
-        sheet_name="Ghana",
+        sheet_name="Philipines",
         usecols="B:J",
         nrows=1000,
     )
@@ -138,7 +138,7 @@ df_selection = df.query(
 )
 
 # ---- MAINPAGE ----
-st.title(":bar_chart: Sales Dashboard")
+st.title(":bar_chart: Philippines Dashboard")
 st.markdown("##")
 
 # TOP KPI's
